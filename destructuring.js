@@ -1,7 +1,7 @@
-var [a, b] = [1, 2];
+let [x, y] = [1, 2];
 
-console.log(a);
-console.log(b);
+console.log(x);
+console.log(y);
 
 
 var customerToReturn = {
@@ -25,9 +25,6 @@ console.log(isPop);
 console.log(a);
 console.log(b);
 
-var [a, b] = [1, 2];
-var [first, ...rest] = [1,2,3,4,5];
-console.log(first);
 
 function curry(fn, ...first){
     return function(...second){
@@ -36,11 +33,11 @@ function curry(fn, ...first){
 }
 
 // comment other one
-/*
+
 let {a, b, c} = { a: 1, b:2};
 
 
-var customerToReturn = {
+var customerToReturn1 = {
 	firstName: 'Pat', 
 	lastName: 'Cummins', 
 	age:40, 
@@ -52,9 +49,9 @@ var customerToReturn = {
 	}
 };
 
-let getCustomer  = () =>  customerToReturn;
+let getCustomer1  = () =>  customerToReturn1;
 
-var {customerKey: key, isPop: popStar,  address : {state: s} } = getCustomer();
+var {customerKey: key, isPop: popStar,  address : {state: s} } = getCustomer1();
 
 console.log(key);
 console.log(popStar);
@@ -62,7 +59,7 @@ console.log(s);
 
 
 
-*/
+
 
 
 
